@@ -1,0 +1,12 @@
+- name: clone a private repository
+  git:
+    repo: "{{ git_repo }}"
+    dest: "{{ web_path }}"
+    accept_hostkey: yes
+    force: yes
+    version: "{{ git_branch }}"
+
+- name: Docker build
+  command: docker-compose up -d --build
+  args:
+    chdir: "{{ web_path }}"

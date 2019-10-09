@@ -1,0 +1,10 @@
+## Repo
+git_repo: git@github.com:SokhomRatanak/Example-Dockerfile.git
+git_branch: master
+
+## Document root
+web_path: "/var/www/html/Example-Dockerfile"
+
+## Apache setting variable
+www_user: root
+www_group: www-data

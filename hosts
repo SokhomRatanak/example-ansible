@@ -1,0 +1,5 @@
+[web]
+testapp ansible_host=51.158.106.134 ansible_connection=ssh ansible_user=root
+
+[web:vars]
+ansible_python_interpreter=/usr/bin/python3
